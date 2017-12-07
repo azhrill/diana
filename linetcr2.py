@@ -2043,10 +2043,10 @@ def bot(op):
 
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Respon","respon","Respon Dong","respon dong"]:
-                cl.sendText(msg.to,"...")
-                ki.sendText(msg.to,"......")
-                kk.sendText(msg.to,"..........")
-                kc.sendText(msg.to,"..............")
+                cl.sendText(msg.to,"emak")
+                ki.sendText(msg.to,"amanda")
+                kk.sendText(msg.to,"kapan")
+                kc.sendText(msg.to,"nikah?..")
                 ks.sendText(msg.to,"...................")
                 ka.sendText(msg.to,"......................")
                 kb.sendText(msg.to,"...........................")
