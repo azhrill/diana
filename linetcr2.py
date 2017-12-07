@@ -10,23 +10,23 @@ import time,random,sys,json,codecs,threading,glob,re
 #kk.loginResult()
 
 cl = LINETCR.LINE()
-cl.login(token="EmADEFjV5mMoxTJ5vx7b.s6bD8YHeZ6XmNXI1Sjn6kW.2mR0Wu3HCspPfH2nbX+a4bXGaG1XohWWU9X/fDOCHck=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmLYEqFaY2ubmynodGS8.M6LZiYl2xoeB8YVTruGGka.ADh3Pv33vvKv24/4fTAn5L3x04RHh9iwH1/kGA2BzvE=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EmWJOKN8AMp0ZyZPiOm2.Jgl5RslTncic7OYxuCz5iG.LcLGzkdE0Fk1FfL0DVwObmhTAYt1DXwtb2FlmFgaBVU=")
+kk.login(qr=True)
 kk.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EmjzzW683uPiDR6U3wef.rswmxGu38pD7uEDFxb/cZW.jq838qFN3bcW/2ooL0yK17qe9NaLjmWa5HHFthuz+xc=")
+kc.login(qr=True)
 kc.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EmJh9cSoGTUfcKpgVTh4.ouzS2gABezcyJi8CahL/Ta.qcVyj8awAvmQVrxBdL/RM5FWUCqYrSQ/RVDOPD2ThIY=")
+ks.login(qr=True)
 ks.loginResult()
 
 cl
@@ -88,8 +88,8 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = ks.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,"u4ba05df32844cfac4c9f18b5b0937a2b"]
-admin=["u4ba05df32844cfac4c9f18b5b0937a2b"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,"u29c6532cc49a120f101a3c2c0ab4556f]
+admin=["u29c6532cc49a120f101a3c2c0ab4556f]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -555,7 +555,7 @@ def bot(op):
             if msg.contentType == 16:
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
                if wait["wblack"] == True:
